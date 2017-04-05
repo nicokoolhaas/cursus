@@ -1,0 +1,7 @@
+---
+
+- name: apache
+  src: https://github.com/nicokoolhaas/cursus/users.git
+  scm: git
+  version: master
+  path: roles
