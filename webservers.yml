@@ -1,0 +1,7 @@
+---
+- name: Create user
+  hosts: web
+  become: true
+
+  roles:
+  - users

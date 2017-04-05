@@ -1,0 +1,4 @@
+---
+# vars file for users
+username: role_user
+http_port: 8080

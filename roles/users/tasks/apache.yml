@@ -1,0 +1,15 @@
+---
+# tasks file for users
+- name: installeer apache webserver
+  yum: name=httpd state=installed
+
+- name: start apache webserver
+  service: name=httpd state=started enabled=yes
+
+- name: kopieer index.html naar de webserver
+  copy: src=index.html dest=/var/www/html
+  tags: index
+
+- name: gebruik de juiste configuratie voor apache
+  template: src=httpd.conf.j2 dest=/etc/httpd/conf/httpd.conf
+  notify: restart apache

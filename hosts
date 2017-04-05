@@ -1,0 +1,13 @@
+[controlserver]
+acs  ansible_connection=local
+
+[webservers]
+web
+
+[dbservers]
+db
+
+[boxtel:children]
+webservers
+dbservers
+controlserver
