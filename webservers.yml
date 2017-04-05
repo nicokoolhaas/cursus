@@ -3,6 +3,5 @@
   hosts: web
   become: true
 
-# test met GIT
   roles:
   - users
