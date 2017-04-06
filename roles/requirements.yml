@@ -1,6 +1,6 @@
 ---
 
-- name: apache
+- name: selinux
   src: https://github.com/nicokoolhaas/cursus.git
   scm: git
   version: master
