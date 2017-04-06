@@ -1,9 +1,0 @@
----
-
-- name: Create user
-  hosts: localhost
-  become: true
-  become_method: sudo
-
-  roles:
-  - users

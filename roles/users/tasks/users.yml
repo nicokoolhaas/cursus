@@ -1,4 +1,0 @@
----
-# handlers file for users
-- name: Create user with role
-  user: name="{{ username }}" password=12345
