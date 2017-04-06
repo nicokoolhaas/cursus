@@ -1,7 +1,13 @@
 ---
 
+- name: apache
+  src: https://github.com/nicokoolhaas/apache.git
+  scm: git
+  version: master
+  path: roles
+
 - name: selinux
-  src: https://github.com/nicokoolhaas/cursus.git
+  src: https://github.com/nicokoolhaas/selinux.git
   scm: git
   version: master
   path: roles
