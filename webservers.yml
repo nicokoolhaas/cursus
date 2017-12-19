@@ -1,6 +1,6 @@
 ---
 - name: Instal apache and disable selinux
-  hosts: web
+  hosts: all
   become: true
 
   roles:
